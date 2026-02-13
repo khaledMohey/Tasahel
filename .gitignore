@@ -14,16 +14,32 @@ env/
 ENV/
 
 # Node
+node_modules/
 **/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+**/venv/
+*.egg-info/
+*.egg
 
 # Build outputs
 dist/
 build/
-*.egg-info/
+out/
+dist-electron/
 
 # IDE
 .vscode/
@@ -44,10 +60,6 @@ Thumbs.db
 # Logs
 *.log
 logs/
-
-# Electron
-out/
-dist-electron/
 
 # Temporary files
 *.tmp
